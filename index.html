@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <title>Patriks Ramverktyg</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="modal">
+
+                </div>
+                <div class="modal-footer">
+
+                    <h2>footer</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div class="jumbotron">
+        <h1>Patriks Ramverktyg</h1>
+        <div class="form-group">
+            <label for="width">Bredd:</label>
+            <input type="text" class="form-control" id="width">
+            <label for="height">Höjd:</label>
+            <input type="text" class="form-control" id="height">
+            <label for="marginal">Marginal:</label>
+            <input type="text" class="form-control" id="marginal">
+            <label for="frame">Välj ramtyp</label>
+            <select class="form-control" id="frame">
+                <option data-cost="25">Test 1</option>
+                <option data-cost="35">Test 2</option>
+                <option data-cost="45">Test 3</option>
+                <option data-cost="55">Test 4</option>
+            </select>
+            <label for="comment">Här kan du lägga till en kommentar till oss:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-success moveon">Förhandsgranska och gå vidare!</button>
+        <button type="button" class="btn btn-danger clearall">Töm lista.</button>
+        <hr>
+
+
+    <div class="previewframe" id="previewframe">
+        <img src="http://static.images-di.se/SiteImages/2016/01/17/thumbnails/p_zlatan-1169.jpg" alt="" />
+    </div>
+    <div id="textdiv">
+    </div>
+    <div id="buttondiv">
+        <button type="button" class="btn btn-success" id="accept">Skicka till hemsida</button>
+    </div>
+    </div>
+    <!-- /.container -->
+    <script src="script.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
